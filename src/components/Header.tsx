@@ -48,7 +48,7 @@ const Header = () => {
             <Card className="p-8 bg-white/90 backdrop-blur-sm shadow-2xl border-primary/30">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-xl border-4 border-accent">
                 <img
-                  src="/miims.jpg"
+                  src="/meriame-cyber-showcase/miims.jpg"  // ✅ Pour GitHub Pages
                   alt="Meriame El Ouahabi"
                   className="w-full h-full object-cover"
                 />
