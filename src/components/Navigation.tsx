@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
 
   const menuItems = [
     { label: 'Accueil', href: '#' },
@@ -25,11 +24,11 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="font-heading font-bold text-xl text-gradient">
+          <a href="#" className="font-elegant font-bold text-lg text-gradient">
             Meriame El Ouahabi
           </a>
           
@@ -38,7 +37,7 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-foreground hover:text-accent transition-colors duration-200 font-medium"
+                className="text-foreground hover:text-accent transition-colors duration-200 font-medium font-body"
               >
                 {item.label}
               </a>

@@ -31,13 +31,13 @@ const Education = () => {
   ];
 
   return (
-    <section id="parcours" className="py-20 bg-secondary/30">
+    <section id="parcours" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-elegant font-bold mb-6">
             <span className="text-gradient">Parcours</span> Académique
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-body">
             Mon cheminement éducatif vers l'excellence en cybersécurité
           </p>
         </div>
@@ -53,23 +53,23 @@ const Education = () => {
                   {/* Timeline dot */}
                   <div className="absolute left-6 w-4 h-4 bg-accent rounded-full border-4 border-background hidden md:block"></div>
                   
-                  <Card className={`ml-0 md:ml-20 transition-all duration-300 hover:shadow-lg ${item.current ? 'border-accent shadow-md' : ''}`}>
+                  <Card className={`ml-0 md:ml-20 transition-all duration-300 hover:shadow-lg bg-white border-primary/20 ${item.current ? 'border-accent shadow-md' : ''}`}>
                     <CardContent className="p-6">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                        <span className={`text-sm font-medium px-3 py-1 rounded-full ${item.current ? 'bg-accent text-accent-foreground' : 'bg-primary text-primary-foreground'}`}>
+                        <span className={`text-sm font-medium px-3 py-1 rounded-full font-body ${item.current ? 'bg-accent text-accent-foreground' : 'bg-primary text-primary-foreground'}`}>
                           {item.period}
                         </span>
                         {item.current && (
-                          <span className="text-xs text-accent font-medium mt-2 sm:mt-0">
+                          <span className="text-xs text-accent font-medium mt-2 sm:mt-0 font-body">
                             En cours
                           </span>
                         )}
                       </div>
-                      <h3 className="text-xl font-heading font-semibold mb-2 text-foreground">
+                      <h3 className="text-xl font-elegant font-semibold mb-2 text-foreground">
                         {item.title}
                       </h3>
-                      <p className="text-accent font-medium mb-2">{item.specialty}</p>
-                      <p className="text-muted-foreground">
+                      <p className="text-accent font-medium mb-2 font-body">{item.specialty}</p>
+                      <p className="text-muted-foreground font-body">
                         <span className="font-medium">{item.institution}</span> – {item.location}
                       </p>
                     </CardContent>

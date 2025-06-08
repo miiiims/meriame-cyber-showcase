@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Design system with light pink and black theme */
+/* Design system with light pink, black and white theme */
 
 @layer base {
   :root {
@@ -23,13 +23,13 @@
     --secondary-foreground: 0 0% 0%;
 
     --muted: 251 207 232;
-    --muted-foreground: 55 5.3% 26.1%;
+    --muted-foreground: 0 0% 35%; /* Darker for better contrast */
 
     --accent: 244 114 182; /* Medium pink accent */
-    --accent-foreground: 255 255 255;
+    --accent-foreground: 255 255 255; /* White text on accent */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 255 255 255;
 
     --border: 236 72% 79%;
     --input: 236 72% 79%;
@@ -48,7 +48,8 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground;
+    font-family: 'Playfair Display', 'Inter', sans-serif;
   }
 
   .gradient-pink {
@@ -64,5 +65,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .font-elegant {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
   }
 }
