@@ -4,10 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-secondary/30">
+    <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-elegant font-bold mb-6">
             <span className="text-gradient">Me</span> Contacter
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -16,9 +16,9 @@ const Contact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="shadow-xl border-primary/20 animate-fade-in">
+          <Card className="shadow-xl border-primary/20 animate-fade-in bg-white">
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl font-heading mb-4">
+              <CardTitle className="text-3xl font-elegant mb-4">
                 Restons en contact !
               </CardTitle>
               <p className="text-muted-foreground">
@@ -28,9 +28,9 @@ const Contact = () => {
             
             <CardContent className="space-y-8">
               {/* Email principal */}
-              <div className="text-center p-6 bg-primary/10 rounded-lg">
+              <div className="text-center p-6 bg-primary rounded-lg">
                 <div className="text-4xl mb-4">📧</div>
-                <h3 className="text-xl font-semibold mb-2">Email</h3>
+                <h3 className="text-xl font-semibold mb-2 text-black">Email</h3>
                 <a 
                   href="mailto:meriameelouahabi@gmail.com"
                   className="text-accent hover:text-accent/80 transition-colors text-lg font-medium"
@@ -47,9 +47,9 @@ const Contact = () => {
                     href="[VOTRE_LIEN_LINKEDIN]"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex flex-col items-center gap-2 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-primary/5"
+                    className="group flex flex-col items-center gap-2 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-primary border-2 hover:border-accent"
                   >
-                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white text-xl group-hover:bg-blue-700 transition-colors">
+                    <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center text-white text-xl group-hover:bg-accent/90 transition-colors">
                       💼
                     </div>
                     <span className="text-sm font-medium group-hover:text-accent transition-colors">LinkedIn</span>
@@ -59,9 +59,9 @@ const Contact = () => {
                     href="[VOTRE_LIEN_GITHUB]"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex flex-col items-center gap-2 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-primary/5"
+                    className="group flex flex-col items-center gap-2 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-primary border-2 hover:border-accent"
                   >
-                    <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-white text-xl group-hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-foreground rounded-lg flex items-center justify-center text-white text-xl group-hover:bg-foreground/90 transition-colors">
                       👩‍💻
                     </div>
                     <span className="text-sm font-medium group-hover:text-accent transition-colors">GitHub</span>
@@ -70,8 +70,8 @@ const Contact = () => {
               </div>
 
               {/* Note pour les liens */}
-              <div className="text-center p-4 bg-accent/10 rounded-lg">
-                <p className="text-sm text-muted-foreground">
+              <div className="text-center p-4 bg-primary rounded-lg">
+                <p className="text-sm text-black">
                   <strong>Note :</strong> Remplacez [VOTRE_LIEN_LINKEDIN] et [VOTRE_LIEN_GITHUB] par vos liens réels dans le code source.
                 </p>
               </div>

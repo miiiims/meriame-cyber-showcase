@@ -47,10 +47,10 @@ const Skills = () => {
   ];
 
   return (
-    <section id="competences" className="py-20 bg-secondary/30">
+    <section id="competences" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-elegant font-bold mb-6">
             Compétences <span className="text-gradient">Techniques</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -62,12 +62,12 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 
-              className="group hover:shadow-lg transition-all duration-300 animate-fade-in hover:border-accent/50"
+              className="group hover:shadow-lg transition-all duration-300 animate-fade-in hover:border-accent/50 bg-white"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="text-center pb-4">
                 <div className="text-4xl mb-4">{category.icon}</div>
-                <CardTitle className="text-lg font-heading group-hover:text-accent transition-colors">
+                <CardTitle className="text-lg font-elegant group-hover:text-accent transition-colors">
                   {category.title}
                 </CardTitle>
               </CardHeader>

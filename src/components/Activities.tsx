@@ -28,10 +28,10 @@ const Activities = () => {
   ];
 
   return (
-    <section id="activites" className="py-20">
+    <section id="activites" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-elegant font-bold mb-6">
             Activités <span className="text-gradient">Parascolaires</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -42,12 +42,12 @@ const Activities = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
             {activities.map((activity, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300 animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
+              <Card key={index} className="hover:shadow-lg transition-all duration-300 animate-fade-in bg-white" style={{ animationDelay: `${index * 0.2}s` }}>
                 <CardHeader>
                   <div className="flex items-center gap-4 mb-2">
                     <span className="text-3xl">{activity.icon}</span>
                     <div>
-                      <CardTitle className="text-xl font-heading">{activity.title}</CardTitle>
+                      <CardTitle className="text-xl font-elegant">{activity.title}</CardTitle>
                       <p className="text-accent font-medium">{activity.organization}</p>
                     </div>
                   </div>
@@ -61,7 +61,7 @@ const Activities = () => {
                     {activity.skills.map((skill, skillIndex) => (
                       <span 
                         key={skillIndex}
-                        className="text-xs bg-primary/20 text-primary px-2 py-1 rounded-md font-medium"
+                        className="text-xs bg-primary text-black px-2 py-1 rounded-md font-medium"
                       >
                         {skill}
                       </span>
@@ -72,9 +72,9 @@ const Activities = () => {
             ))}
           </div>
 
-          <Card className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <Card className="animate-fade-in bg-white" style={{ animationDelay: '0.4s' }}>
             <CardHeader>
-              <CardTitle className="text-2xl font-heading flex items-center gap-3">
+              <CardTitle className="text-2xl font-elegant flex items-center gap-3">
                 <span>🎯</span>
                 Centres d'intérêt
               </CardTitle>
@@ -84,10 +84,10 @@ const Activities = () => {
                 {interests.map((interest, index) => (
                   <div 
                     key={index}
-                    className="flex items-center gap-3 p-3 bg-secondary/50 rounded-lg"
+                    className="flex items-center gap-3 p-3 bg-primary rounded-lg"
                   >
                     <span className="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>
-                    <span className="text-sm font-medium">{interest}</span>
+                    <span className="text-sm font-medium text-black">{interest}</span>
                   </div>
                 ))}
               </div>

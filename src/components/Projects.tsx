@@ -33,10 +33,10 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projets" className="py-20">
+    <section id="projets" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-elegant font-bold mb-6">
             Mes <span className="text-gradient">Projets</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -46,14 +46,14 @@ const Projects = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 animate-fade-in border-primary/20" style={{ animationDelay: `${index * 0.2}s` }}>
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 animate-fade-in border-primary/20 bg-white" style={{ animationDelay: `${index * 0.2}s` }}>
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs font-medium text-accent bg-accent/10 px-3 py-1 rounded-full">
+                  <span className="text-xs font-medium text-black bg-primary px-3 py-1 rounded-full">
                     {project.category}
                   </span>
                 </div>
-                <CardTitle className="text-2xl font-heading group-hover:text-accent transition-colors">
+                <CardTitle className="text-2xl font-elegant group-hover:text-accent transition-colors">
                   {project.title}
                 </CardTitle>
                 <p className="text-muted-foreground leading-relaxed">
@@ -80,7 +80,7 @@ const Projects = () => {
                     {project.technologies.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
-                        className="text-xs bg-primary/20 text-primary px-2 py-1 rounded-md font-medium"
+                        className="text-xs bg-primary text-black px-2 py-1 rounded-md font-medium"
                       >
                         {tech}
                       </span>

@@ -51,12 +51,12 @@ const Education = () => {
               {educationData.map((item, index) => (
                 <div key={index} className="relative animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
                   {/* Timeline dot */}
-                  <div className="absolute left-6 w-4 h-4 bg-accent rounded-full border-4 border-background hidden md:block"></div>
+                  <div className="absolute left-6 w-4 h-4 bg-accent rounded-full border-4 border-white hidden md:block"></div>
                   
                   <Card className={`ml-0 md:ml-20 transition-all duration-300 hover:shadow-lg bg-white border-primary/20 ${item.current ? 'border-accent shadow-md' : ''}`}>
                     <CardContent className="p-6">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                        <span className={`text-sm font-medium px-3 py-1 rounded-full font-body ${item.current ? 'bg-accent text-accent-foreground' : 'bg-primary text-primary-foreground'}`}>
+                        <span className={`text-sm font-medium px-3 py-1 rounded-full font-body ${item.current ? 'bg-accent text-white' : 'bg-primary text-black'}`}>
                           {item.period}
                         </span>
                         {item.current && (
