@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 254 242 242; /* Very light pink background */
+    --background: 255 255 255; /* Pure white background */
     --foreground: 0 0% 0%; /* Black text */
 
     --card: 255 255 255; /* White cards */
@@ -50,6 +50,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Playfair Display', 'Inter', sans-serif;
+    background-color: white; /* Force white background */
   }
 
   .gradient-pink {
