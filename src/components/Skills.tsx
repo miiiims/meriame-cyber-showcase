@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -53,31 +52,31 @@ const Skills = () => {
           <h2 className="text-4xl lg:text-5xl font-elegant font-bold mb-6">
             Compétences <span className="text-gradient">Techniques</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Mon expertise technique couvre tous les aspects de la cybersécurité moderne
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {skillCategories.map((category, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="group hover:shadow-lg transition-all duration-300 animate-fade-in hover:border-accent/50 bg-white"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="text-center pb-4">
                 <div className="text-4xl mb-4">{category.icon}</div>
-                <CardTitle className="text-lg font-elegant group-hover:text-accent transition-colors">
+                <CardTitle className="text-lg font-elegant text-black">
                   {category.title}
                 </CardTitle>
               </CardHeader>
-              
+
               <CardContent>
                 <ul className="space-y-3">
                   {category.skills.map((skill, skillIndex) => (
-                    <li 
+                    <li
                       key={skillIndex}
-                      className="flex items-start gap-3 text-sm text-muted-foreground"
+                      className="flex items-start gap-3 text-sm text-gray-700"
                     >
                       <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></span>
                       {skill}

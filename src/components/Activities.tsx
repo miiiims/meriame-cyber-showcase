@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -34,7 +33,7 @@ const Activities = () => {
           <h2 className="text-4xl lg:text-5xl font-elegant font-bold mb-6">
             Activités <span className="text-gradient">Parascolaires</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Engagement associatif et centres d'intérêt en cybersécurité
           </p>
         </div>
@@ -42,24 +41,28 @@ const Activities = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
             {activities.map((activity, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300 animate-fade-in bg-white" style={{ animationDelay: `${index * 0.2}s` }}>
+              <Card
+                key={index}
+                className="hover:shadow-lg transition-all duration-300 animate-fade-in bg-white"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
                 <CardHeader>
                   <div className="flex items-center gap-4 mb-2">
                     <span className="text-3xl">{activity.icon}</span>
                     <div>
-                      <CardTitle className="text-xl font-elegant">{activity.title}</CardTitle>
-                      <p className="text-accent font-medium">{activity.organization}</p>
+                      <CardTitle className="text-xl font-elegant text-black">{activity.title}</CardTitle>
+                      <p className="text-black font-medium">{activity.organization}</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed">
                     {activity.description}
                   </p>
                 </CardHeader>
-                
+
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {activity.skills.map((skill, skillIndex) => (
-                      <span 
+                      <span
                         key={skillIndex}
                         className="text-xs bg-primary text-black px-2 py-1 rounded-md font-medium"
                       >
@@ -74,7 +77,7 @@ const Activities = () => {
 
           <Card className="animate-fade-in bg-white" style={{ animationDelay: '0.4s' }}>
             <CardHeader>
-              <CardTitle className="text-2xl font-elegant flex items-center gap-3">
+              <CardTitle className="text-2xl font-elegant flex items-center gap-3 text-black">
                 <span>🎯</span>
                 Centres d'intérêt
               </CardTitle>
@@ -82,7 +85,7 @@ const Activities = () => {
             <CardContent>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {interests.map((interest, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="flex items-center gap-3 p-3 bg-primary rounded-lg"
                   >

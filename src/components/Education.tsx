@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -37,7 +36,7 @@ const Education = () => {
           <h2 className="text-4xl lg:text-5xl font-elegant font-bold mb-6">
             <span className="text-gradient">Parcours</span> Académique
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-body">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto font-body">
             Mon cheminement éducatif vers l'excellence en cybersécurité
           </p>
         </div>
@@ -56,20 +55,22 @@ const Education = () => {
                   <Card className={`ml-0 md:ml-20 transition-all duration-300 hover:shadow-lg bg-white border-primary/20 ${item.current ? 'border-accent shadow-md' : ''}`}>
                     <CardContent className="p-6">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                        <span className={`text-sm font-medium px-3 py-1 rounded-full font-body ${item.current ? 'bg-accent text-white' : 'bg-primary text-black'}`}>
+                        <span className={`text-sm font-medium px-3 py-1 rounded-full font-body ${
+                          item.current ? 'bg-black text-white' : 'bg-primary text-black'
+                        }`}>
                           {item.period}
                         </span>
                         {item.current && (
-                          <span className="text-xs text-accent font-medium mt-2 sm:mt-0 font-body">
+                          <span className="text-xs text-black font-medium mt-2 sm:mt-0 font-body">
                             En cours
                           </span>
                         )}
                       </div>
-                      <h3 className="text-xl font-elegant font-semibold mb-2 text-foreground">
+                      <h3 className="text-xl font-elegant font-semibold mb-2 text-black">
                         {item.title}
                       </h3>
-                      <p className="text-accent font-medium mb-2 font-body">{item.specialty}</p>
-                      <p className="text-muted-foreground font-body">
+                      <p className="text-black font-medium mb-2 font-body">{item.specialty}</p>
+                      <p className="text-gray-700 font-body">
                         <span className="font-medium">{item.institution}</span> – {item.location}
                       </p>
                     </CardContent>

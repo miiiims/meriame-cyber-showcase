@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -39,46 +38,50 @@ const Projects = () => {
           <h2 className="text-4xl lg:text-5xl font-elegant font-bold mb-6">
             Mes <span className="text-gradient">Projets</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Découvrez mes réalisations techniques en cybersécurité et développement
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 animate-fade-in border-primary/20 bg-white" style={{ animationDelay: `${index * 0.2}s` }}>
+            <Card
+              key={index}
+              className="group hover:shadow-xl transition-all duration-300 animate-fade-in border-primary/20 bg-white"
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-xs font-medium text-black bg-primary px-3 py-1 rounded-full">
                     {project.category}
                   </span>
                 </div>
-                <CardTitle className="text-2xl font-elegant group-hover:text-accent transition-colors">
+                <CardTitle className="text-2xl font-elegant text-black group-hover:text-gray-800 transition-colors">
                   {project.title}
                 </CardTitle>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   {project.description}
                 </p>
               </CardHeader>
-              
+
               <CardContent className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-foreground mb-3">Fonctionnalités principales :</h4>
+                  <h4 className="font-semibold text-black mb-3">Fonctionnalités principales :</h4>
                   <ul className="space-y-2">
                     {project.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <li key={featureIndex} className="flex items-start gap-2 text-sm text-gray-700">
                         <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></span>
                         {feature}
                       </li>
                     ))}
                   </ul>
                 </div>
-                
+
                 <div>
-                  <h4 className="font-semibold text-foreground mb-3">Technologies utilisées :</h4>
+                  <h4 className="font-semibold text-black mb-3">Technologies utilisées :</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
-                      <span 
+                      <span
                         key={techIndex}
                         className="text-xs bg-primary text-black px-2 py-1 rounded-md font-medium"
                       >

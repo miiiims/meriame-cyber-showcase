@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 
@@ -15,27 +14,30 @@ const Header = () => {
               <span className="text-gradient">Meriame</span>{' '}
               <span className="text-foreground">El Ouahabi</span>
             </h1>
+
             <div className="mb-8">
-              <p className="text-xl lg:text-2xl text-accent font-medium mb-4 font-elegant">
+              <p className="text-xl lg:text-2xl text-black font-medium mb-4 font-elegant">
                 Étudiante en Cybersécurité
               </p>
-              <p className="text-lg text-muted-foreground font-body">
+              <p className="text-lg text-black font-body">
                 Institut National des Postes et Télécommunications (INPT)
               </p>
             </div>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl font-body leading-relaxed">
+
+            <p className="text-lg text-gray-700 mb-8 max-w-2xl font-body leading-relaxed">
               Passionnée par la sécurité matérielle et logicielle, ainsi que par l'intelligence artificielle appliquée à la cybersécurité.
             </p>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a 
                 href="#contact" 
-                className="inline-flex items-center justify-center px-8 py-4 bg-accent text-accent-foreground rounded-lg font-medium hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl font-body"
+                className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl font-body"
               >
                 Me contacter
               </a>
               <a 
                 href="#projets" 
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-accent text-accent rounded-lg font-medium hover:bg-accent hover:text-accent-foreground transition-all duration-300 font-body"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-black text-black rounded-lg font-medium hover:bg-black hover:text-white transition-all duration-300 font-body"
               >
                 Voir mes projets
               </a>
@@ -44,12 +46,12 @@ const Header = () => {
           
           <div className="flex-shrink-0 animate-slide-in">
             <Card className="p-8 bg-white/90 backdrop-blur-sm shadow-2xl border-primary/30">
-              <div className="w-80 h-80 bg-gradient-accent rounded-full flex items-center justify-center text-white text-lg font-medium">
-                {/* Placeholder pour votre photo */}
-                <div className="text-center">
-                  <div className="text-4xl mb-4">📸</div>
-                  <p className="text-sm opacity-90 font-body">Votre photo ici</p>
-                </div>
+              <div className="w-80 h-80 rounded-full overflow-hidden shadow-xl border-4 border-accent">
+                <img
+                  src="/miims.jpg"
+                  alt="Meriame El Ouahabi"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </Card>
           </div>
